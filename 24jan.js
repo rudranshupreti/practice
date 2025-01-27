@@ -45,7 +45,22 @@
  
 
 // const a;
-// console.log(a);
+// console.log(a); // Uncaught SyntaxError: Missing initializer in const declaration (at 24jan.js:44:7)     
+
+
+// function  add(a,b){
+
+//   return a+b;
+
+// }
+
+// console.log(add(2,55)); // 57
+
+
+
+  
+
+
 
 
 
