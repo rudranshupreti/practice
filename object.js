@@ -172,17 +172,17 @@
 
 
 // object constructor
-function person(firstname,lastname,age,eyecolor){
-this.firstname = firstname;
-this.lastname = lastname;
-this.age = age;
-this.eyecolor = eyecolor;
-}
+// function person(firstname,lastname,age,eyecolor){
+// this.firstname = firstname;
+// this.lastname = lastname;
+// this.age = age;
+// this.eyecolor = eyecolor;
+// }
 
-const myfather = new person("john","doe",50,"blue");
+// const myfather = new person("john","doe",50,"blue");
 // const mymother = new person("sally","rally",48,"green");
 
-console.log(myfather);
+// console.log(myfather);
 // console.log(mymother);
 // console.log(myfather.firstname);
 
@@ -312,40 +312,40 @@ console.log(myfather);
 
 
 
-function person( first,last,age){
-  this.fistname=first;
-  this.lastname= last;
-  this.age=age;
+// function person( first,last,age){
+//   this.fistname=first;
+//   this.lastname= last;
+//   this.age=age;
 
-}
+// }
 
-const father = new person("rudran","upreti",33);
-father.changeName = function(name){
-  this.lastName = name;
-}
+// const father = new person("rudran","upreti",33);
+// father.changeName = function(name){
+//   this.lastName = name;
+// }
 
-father.changeName("rudrasnh");
+// father.changeName("rudrasnh");
 
-console.log(father);
-function getThis() {
-  return this;
-}
+// console.log(father);
+// function getThis() {
+//   return this;
+// }
 
-const obj1 = { name: "obj1" , age:"jghvfhuvc"};
-const obj2 = { name: "obj2",age:"jghvfhuvc" };
+// const obj1 = { name: "obj1" , age:"jghvfhuvc"};
+// const obj2 = { name: "obj2",age:"jghvfhuvc" };
 
-obj1.getThis = getThis;
-obj2.getThis = getThis;
+// obj1.getThis = getThis;
+// obj2.getThis = getThis;
 
-console.log(obj1.getThis());
-console.log(obj2.getThis());
+// console.log(obj1.getThis());
+// console.log(obj2.getThis());
  
-console.log(+null)//0 ans
-const obj = {
-  name: 'John',
-  age: 30,
-  city: 'New York'
-};
+// console.log(+null)//0 ans
+// const obj = {
+//   name: 'John',
+//   age: 30,
+//   city: 'New York'
+// };
 
-const entries = Object.entries(obj);
-console.log(entries)
+// const entries = Object.entries(obj);
+// console.log(entries)

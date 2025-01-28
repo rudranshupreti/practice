@@ -137,7 +137,7 @@
 
 // indexOf use to find the index value of string in js it is similar to array 
 
-let txt  = "plae help  me 'sir' ME  hello me  ";
+// let txt  = "plae help  me 'sir' ME  hello me  ";
 // let find = txt.indexOf(" ");
 // console.log(find);
 // let lastindex =  txt.lastIndexOf('');
@@ -166,5 +166,21 @@ let txt  = "plae help  me 'sir' ME  hello me  ";
 // let match4 = txt.match(/me/gi);//it is case not case secitive 
 // console.log(match4);
 
-let iterator= txt.matchAll(/me/gi);
-console.log(iterator);
+// let iterator= txt.matchAll(/me/gi);
+// console.log(iterator);
+
+
+// let include = txt.includes("me"
+// );
+
+// console.log(include);
+
+// let startw = txt.startsWith('plae');
+// console.log(startw);
+// template letrates
+
+// let temp = 'kasbfhw sfbjwsf'
+// let rd = "aeegggvf";
+// let add = `${temp}+${rd}`
+
+// console.log(add);
