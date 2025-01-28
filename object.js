@@ -98,7 +98,7 @@
 // }
 
 // console.log(person.fullname());
-
+// this is called object method
 
 
 // object are immutable in javascript hame unki value change kr skte he Ager hamne unhe const me define kiya hai to bhi unki value change ho skti hai
@@ -172,17 +172,17 @@
 
 
 // object constructor
-// function person(firstname,lastname,age,eyecolor){
-// this.firstname = firstname;
-// this.lastname = lastname;
-// this.age = age;
-// this.eyecolor = eyecolor;
-// }
+function person(firstname,lastname,age,eyecolor){
+this.firstname = firstname;
+this.lastname = lastname;
+this.age = age;
+this.eyecolor = eyecolor;
+}
 
-// const myfather = new person("john","doe",50,"blue");
+const myfather = new person("john","doe",50,"blue");
 // const mymother = new person("sally","rally",48,"green");
 
-// console.log(myfather);
+console.log(myfather);
 // console.log(mymother);
 // console.log(myfather.firstname);
 
@@ -231,7 +231,7 @@
 // }
 
 // let text = "";
-// for (let x in person){
+// for (let x of person){
 //   text += person[x]+" ";
 // };
 
@@ -327,3 +327,25 @@ father.changeName = function(name){
 father.changeName("rudrasnh");
 
 console.log(father);
+function getThis() {
+  return this;
+}
+
+const obj1 = { name: "obj1" , age:"jghvfhuvc"};
+const obj2 = { name: "obj2",age:"jghvfhuvc" };
+
+obj1.getThis = getThis;
+obj2.getThis = getThis;
+
+console.log(obj1.getThis());
+console.log(obj2.getThis());
+ 
+console.log(+null)//0 ans
+const obj = {
+  name: 'John',
+  age: 30,
+  city: 'New York'
+};
+
+const entries = Object.entries(obj);
+console.log(entries)
