@@ -69,11 +69,102 @@
 // console.log(text);
 // using substring ye slice jese kaam krta diffrence itna he bss isme ham value 0 nhi kr skte end or starting ki 
 
-let str = " aiwkbfiwbgf";
-let text = str.substring(2,4);
-console.log(text);
+// let str = " aiwkbfiwbgf";
+// let text = str.substring(2,4);
+// console.log(text);
 
 //substr ye slice ki jese kaam karta he bss insme phele value se jitne index value ko start krta he or end last value me krta he 
-let str2 = str.substr(3,6);
-console.log(str2);
+// let str2 = str.substr(3,6);
+// console.log(str2);
 
+// to upper case and to lowercase
+
+// let text = " My name is rudransh ";
+// let up = text.toUpperCase();
+// let dw = text.toLowerCase();
+// console.log(up,dw);
+
+// let text = "my name is prakher ";
+// let text2 = ' is good boy ';
+// let con =  text.concat('',text2)
+// console.log(con);
+//this is use to trim extra space from arting 
+// let text = '       hello    ';
+// let trim = text.trim();
+// console.log(trim); 
+// let trims = text.trimStart();
+// console.log(trims)
+// let triml = text.trimEnd();
+// console.log(triml)
+
+
+// //padmethod
+// let text = 'dog';
+// let ab = text.padStart("9"," ");
+// console.log(ab);
+
+// repeat method
+
+// let txt = "hello world ";
+// let result = txt.repeat(4);
+// console.log(result);
+
+//it is a relace method use in tring to rrplace the string 
+
+// let text =  "i am is bad boy";
+// let replace = text.replace('bad',"good");
+// console.log(replace);
+// we use /i kyoki jsab koi extra mark ya simbole kisi word ke sath ho or hame usse remove na karna ho 
+// let txt = " hello world:";
+// let newtxt = txt.replace(/hello/i,"by");
+// console.log(newtxt);
+
+// /g is use to remove all the by in string 
+// let txt =  " hello world hello sir hello ";
+// let newtxt = txt.replace(/hello/g, "by")
+// console.log(newtxt);
+
+// let txt  =  "hello          hello    hello     world "
+// let replaceall = txt.replaceAll(' ','');
+// console.log(replaceall)
+
+// split is use to convert string to array
+// let txt = 'hello world kese he ap';
+// let sp =  txt.split(" , ");
+// console.log(sp);
+
+
+
+// indexOf use to find the index value of string in js it is similar to array 
+
+let txt  = "plae help  me 'sir' ME  hello me  ";
+// let find = txt.indexOf(" ");
+// console.log(find);
+// let lastindex =  txt.lastIndexOf('');
+//it will -1 when we not taking any value in bbrakets or valuye is not found
+// console.log(lastindex);
+// The lastIndexOf() methods searches backwards (from the end to the beginning), meaning: if the second parameter is 15, the search starts at position 15, and searches to the beginning of the string.
+// let argument  = txt.lastIndexOf('me',15);
+// console.log(argument);
+
+// let search = txt.search('sir');
+// console.log(search);
+ 
+// The search() method cannot take a second start position argument.
+// The indexOf() method cannot take powerful search values (regular expressions).
+
+// let match = txt.match('me'
+// );
+// console.log(match);
+
+// let match2 = txt.match(/sir/);
+// console.log(match2);
+
+// let match3 = txt.match(/me/g);it is case sencitive
+// console.log(match3);
+
+// let match4 = txt.match(/me/gi);//it is case not case secitive 
+// console.log(match4);
+
+let iterator= txt.matchAll(/me/gi);
+console.log(iterator);
