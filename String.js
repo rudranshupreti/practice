@@ -186,6 +186,14 @@
 // console.log(add);
 
 
-let arr =[ 1,2,3,4,5];
-let min = arr.maxMin();
-console.log(min);
+// let arr =[ 1,2,3,4,5];
+// let min = arr.maxMin();
+// console.log(min);
+
+// access the property of array
+const name = ['hell','hwvf','ihhbff'];
+let txt = '';
+for (let i =0; i< name.length; i++){
+ txt +=name[i];
+}
+console.log(txt);
