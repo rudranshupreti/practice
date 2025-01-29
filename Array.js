@@ -152,5 +152,5 @@ const numbers = ['ssfcasfc','waesdfewdf'];
 // }
 
 // console.log(someOver18);numbers
-const my = numbers.form();
+const my = numbers.from();
 console.log(my);
