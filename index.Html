@@ -6,11 +6,19 @@
   <title>Document</title>
 </head>
 <body>
-  <p id="demo">erg</p>  <button onclick="document.getElementById('demo').innerHTML = Date()">The time is?</button>
+  <p id="demo">erg</p>  
   <p id="hello">hello </p>
   <p id="per">eryer</p>
   <script src="Array.js">
-  
+  const numbers = [45, 4, 9, 16, 25];
+
+let txt = "";
+numbers.forEach(myFunction);
+document.getElementById("demo").innerHTML = txt;
+
+function myFunction(value, index, array) {
+  txt += value + "<br>"; 
+}
   </script>
 
 </body>
