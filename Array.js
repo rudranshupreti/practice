@@ -144,13 +144,52 @@
 // console.log(r);
  
 
-const numbers = ['ssfcasfc','waesdfewdf'];
-// let someOver18 = numbers.some(myFunction);
+// const numbers = 'ssfcasfc';
+// // let someOver18 = numbers.some(myFunction);
 
-// function myFunction(value, index, array) {
-//   return value > 18;
+// // function myFunction(value, index, array) {
+// //   return value > 18;
+// // }
+
+// // console.log(someOver18);numbers
+// const my = Array.from(numbers);
+// console.log(my);
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+// const keys = fruits.keys();
+// let text = "";
+// for (let x of keys) {
+//   text += x + ' ';
 // }
 
-// console.log(someOver18);numbers
-const my = numbers.from();
-console.log(my);
+// console.log(text);
+//entries method
+// const f =  ['eee','wsdf','wsf'];
+// const r =  f.entries();
+// let i = '';
+// for (let x of r){
+//   i += x+' ';
+// }
+
+// console.log(i);
+//spread method
+// const q1 = ["Jan", "Feb", "Mar"];
+// const q2 = ["Apr", "May", "Jun"];
+// const q3 = ["Jul", "Aug", "Sep"];
+// const q4 = ["Oct", "Nov", "May"];
+
+// console.log([...q1,...q2]);
+
+// error when we reassin the same array
+// const cars = ["Saab", "Volvo", "BMW"];
+// cars = ["Toyota", "Volvo", "Audi"]; 
+// console.log(cars);
+// Uncaught TypeError: Assignment to constant variable.
+// we can redeclear the element but not array
+
+// var cars = ["Volvo", "BMW"];     // Allowed
+// const cars = ["Volvo", "BMW"];   // Not allowed
+// {
+//   var cars = ["Volvo", "BMW"];   // Allowed
+//   const cars = ["Volvo", "BMW"]; // Not allowed
+// // }
