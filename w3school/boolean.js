@@ -1,0 +1,12 @@
+let x = 0;
+console.log(Boolean(x));
+let x1 = -0;
+console.log(Boolean(x1));
+let x2 = "";
+console.log(Boolean(x2));
+let x3;
+console.log(Boolean(x3));
+let x4 = null;
+console.log(Boolean(x4));
+let x5 = 10 / "Hallo";
+console.log(Boolean(x5));
