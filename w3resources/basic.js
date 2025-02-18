@@ -31,7 +31,7 @@
 // getcDate();
 
 
-// Write a JavaScript program to find the area of a triangle where three sides are 5, 6, 7.  
+// Write a JavaScript program to find the area of a triangle where three sides are 5, 6, 7.
 // function area (a,b,c){
 //   let s = (a+b+c)/2;
 //   let triangle = Math.sqrt(s * (s - a) * (s - b) * (s - c));  // Fixed the multiplication and square root calculation
@@ -68,5 +68,103 @@
 // let check = Math.floor(Math.random()*11)
 // let pr = Number(prompt("please enter the value"))
 // console.log(check===pr ? "you are write":`you are wrong real no is ${check}`)
+
+
+// Write a JavaScript program to find out if 1st January will be a Sunday between 2014 and 2050.  6
+// let year = 2023;
+
+
+// function sun(year) {
+//     let date = new Date(year, 0, 1); // Create date for 1st January of the given year
+//     if (date.getDay() === 0) { // 0 represents Sunday
+//       console.log(year + " has Sunday on January 1st.");
+//     } else {
+//       console.log(year + " does NOT have Sunday on January 1st.");}
+// }
+// sun(year);
+
+
+// Write a JavaScript program to calculate the days left before diwali.  
+// let date = 23;
+// function diwali (date){
+//   const diwali2025 = new Date(2025, 9, 23); // October 23, 2025 (Month is 0-based)
+//   if (diwali2025.getDate()=== date){
+//     console.log(date+" is right date")
+//   }
+//   else{
+//     console.log(date+"is not the write date ")
+//   }
+// }
+// diwali(date)
+
+
+// Write a JavaScript program to calculate multiplication and division of two numbers (input from the user). 
+// function input (num1 , num2){
+//   let sum = num1*num2;
+//   let multi = num1+num2;
+//   return [sum , multi]  
+// }
+// console.log(input(2,3))
+
+
+// Write a JavaScript program to convert temperatures to and from Celsius, Fahrenheit.  
+// [ Formula : c/5 = (f-32)/9 [ where c = temperature in Celsius and f = temperature in Fahrenheit ]
+// Expected Output :
+// 60°C is 140 °F
+// 45°F is 7.222222222222222°C
+// function cel (num){
+// return  (num * 9/5) + 32;
+// }
+// console.log(cel(45))
+
+
+// Write a JavaScript program to get the website URL (loading page).  
+// console.log(`${document.URL}`);
+
+
+// Write a JavaScript exercise to create a variable using a user-defined name.  
+// var var_name = 'abcd';
+// var n = 120;
+// this[var_name] = n;
+// console.log(this[var_name]); 
+
+
+// Write a JavaScript program to get the difference between a given number and 13, if the number is broader than 13 return double the absolute difference. 
+// function cal(num){
+//   if (num<=13){
+//     return 13-num
+//   }
+//   else{
+//     return(num-13)*2
+//   }
+// }
+// console.log(cal(44))
+
+
+// Write a JavaScript program to compute the sum of the two given integers. If the two values are the same, then return triple their sum. 
+// function sum(num1, num2,){
+// let plus = num1+num2;
+// if (num1===num2){
+//   return plus+num1+num2
+// }
+// }
+// console.log(sum(1,1))
+
+
+// Write a JavaScript program to compute the absolute difference between a specified number and 19. Returns triple the absolute difference if the specified number is greater than 19. 
+//  function cal(num){
+//     if (num<=19){
+//       return 19-num}
+//     else{
+//       return(num-19)*2
+//     }}
+//   console.log(cal(44))
+
+
+// Write a JavaScript program to check a pair of numbers and return true if one of the numbers is 50 or if their sum is 50.  
+// function check(num1,num2){
+//   let sum= num1+num2;
+//   return num1 && num2 ===50|| sum ===50 ? true :false}
+// console.log(check(1,1))
 
 
