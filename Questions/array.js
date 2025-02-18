@@ -140,3 +140,134 @@
 // }
 
 // printParallelogram(5, 7);
+ 
+
+// function randomno(num1,num2){
+//  let x = Math.floor(Math.random()*num1)+1;
+//  while(num2===x){
+//   x =  Math.floor(Math.random()*num1)+1
+//  }
+//  return x;
+// }
+
+// let count =0;
+// for(let i=0;i<100000;i++){
+// const num =randomno(10,3)
+// if(num===3){
+//   count +=1;
+//   console.log("Error")
+// }
+// }
+
+// console.log(count);
+
+
+
+
+
+const questionAnswer = [
+  {
+    id: 1,
+    question: "Coastal State of India?",
+    optionA: "Maharashtra",
+    optionB: "Haryana",
+    optionC: "UP",
+    optionD: "Kerala",
+    answer: ["a", "b"],
+  },
+  {
+    id: 2,
+    question: "Asian Country?",
+    optionA: "India",
+    optionB: "China",
+    optionC: "USA",
+    optionD: "Russia",
+    answer: ["a", "b"],
+  },
+  {
+    id: 3,
+    question: "Capital city of J&K?",
+    optionA: "Leh",
+    optionB: "Jammu",
+    optionC: "Kargil",
+    optionD: "Shree Nagar",
+    answer: ["b", "d"],
+  },
+  {
+    id: 4,
+    question: "City in Europe?",
+    optionA: "London",
+    optionB: "Biging",
+    optionC: "Delhi",
+    optionD: "Ankara",
+    answer: ["a"],
+  },
+];
+
+const userAnswer = [
+  {
+    questionId: 1,
+    question: "Coastal State of India?",
+    optionA: "Maharashtra",
+    optionB: "Haryana",
+    optionC: "UP",
+    optionD: "Kerala",
+    answer: ["c", "b"],
+  },
+  {
+    questionId: 3,
+    question: "Capital city of J&K?",
+    optionA: "Leh",
+    optionB: "Jammu",
+    optionC: "Kargil",
+    optionD: "Shree Nagar",
+    answer: ["b", "c"],
+  },
+  {
+    questionId: 4,
+    optionA: "London",
+    optionB: "Biging",
+    optionC: "Delhi",
+    optionD: "Ankara",
+    answer: ["a"],
+  },
+];
+
+const result = {
+  skip: 1,
+  wrong: 2,
+  right: 1,
+  totalAttempt:3,
+};
+
+
+
+function check(questionAnswer,userAnswer){
+  const output = {
+    wrong:0,
+    right:0,
+    skip:0,
+    totalAttempt:0,
+  }
+   for(const question of questionAnswer){
+    for(const answere of userAnswer ){
+      if(question.id===answere.questionId){
+         output.totalAttempt +=1;
+        const isRight = question.length===answere.length&& question.answer.sort().every((a,index)=>a===answere.answer.sort()[index]);
+        if(isRight){
+output.right+=1;
+break;
+        }else{
+output.wrong+=1;
+        }
+        
+        
+      }}
+      
+}
+
+output.skip=questionAnswer.length-output.totalAttempt;
+return output;
+}
+
+console.log(check(questionAnswer,userAnswer))
